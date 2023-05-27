@@ -10,8 +10,8 @@ describe('Contador', () => {
 
         fireEvent.press(botaoIncrementar);
 
-        const reusltadoContador = getByText('Contador: 1');
+        const resultadoContador = getByText('Contador: 1');
 
-        expect(reusltadoContador).toBeTruthy()
+        expect(resultadoContador).toBeTruthy()
     });
 });

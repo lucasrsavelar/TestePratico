@@ -18,14 +18,15 @@ const MeuTime: React.FC<MeuTimeProps> = ({ time }) => {
             <TextInput
                 placeholder="Digite o nome do time"
                 value={nomeTime}
-                onChangeText={(text) => time = text}
+                //onChangeText={(text) => time = text}
+                onChangeText={(text) => setNomeTime(text)}
             />
-            {mostrarNomeTime &&
-                <>
-                    <Button testID="botaoMostrarTime" title="Exibir nome do time" onPress={handleButtonClick} />
+            <Button title="Exibir nome do time" testID="botaoMostrarTime" onPress={handleButtonClick} />
+            {mostrarNomeTime && (
+                <>    
                     <Text>{nomeTime}</Text>
                 </>
-            }
+            )}
         </View>
     );
 };

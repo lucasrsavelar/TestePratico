@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { View, Text, Button } from 'react-native';
 
 const Contador: React.FC = () => {
-  let count = 0
+  //let count = 0
+  const [count, setCount] = useState(0);
 
   const incrementar = () => {
-    count = count + 1
+    //count = count + 1
+    setCount(count + 1);
   };
 
   return (
